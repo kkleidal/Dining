@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+xmlns:admin="http://webns.net/mvcb/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:content="http://purl.org/rss/1.0/modules/content/">
+
+<channel>
+
+<title>MIT - Next Menu RSS Feed</title>
+
+<link>http://www.bamco.com</link>
+<dc:language>en</dc:language>
+<dc:creator></dc:creator>
+<dc:rights>Copyright 2013</dc:rights>
+
+<item>
+<title>Mon, 16 Sep 2013</title>
+<description>&lt;h3&gt;Dinner&lt;/h3&gt;
+&lt;h4&gt;[comforts] herb stuffed pork loin with creamy mushroom sauce&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;cranberry apple stuffing served with roasted potatoes, rice pilaf, side ok carrots and peas&lt;/p&gt;
+
+&lt;h4&gt;[pure] penne pasta with roasted vegetable&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[smokehouse grill] corned beef sandwich&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;sauerkraut Swiss cheese grilled pumpernickel bread&lt;/p&gt;
+
+&lt;h4&gt;[action] chicken saltimbocca&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;sauteed chicken with sage and prosciutto with mixed vegetables&lt;/p&gt;
+
+&lt;h4&gt;[bits and bytes] Frankfurt hot dog&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;turkey franks, beef franks, chopped bacon, chopped onion, sweet relish, two mustard, ketchup&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] carrots bisque bean and barley&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Breakfast&lt;/h3&gt;
+&lt;h4&gt;[breakfast] pancakes with peach compote&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] cheesy scrambled eggs&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] scrambled eggs&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] hard-boiled eggs&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] bacon&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] pork sausage&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] turkey sausage&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] peas&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] home fries&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] steel cut oats&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] farina&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+</description>
+<nutrition_info></nutrition_info>
+</item>
+
+<item>
+<title>Tue, 17 Sep 2013</title>
+<description>&lt;h3&gt;Breakfast&lt;/h3&gt;
+&lt;h4&gt;[breakfast] vegetables frittata&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;with broccoli, onions, peppers, and mushrooms&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] scrambled eggs huevos ranchero&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;scrambled eggs topped with our house-made salsa&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] scrambled eggs&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] hard-boiled eggs&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] pancakes&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] bacon&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] pork sausage&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] turkey sausage&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] rosemary roasted potatoes&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] corn&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] steel cut oats&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] grits&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Dinner&lt;/h3&gt;
+&lt;h4&gt;[comforts] hawker chicken&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;basmati rice soup&lt;/p&gt;
+
+&lt;h4&gt;[pure] roasted tofu and turban squash with mixed vegetable&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[smokehouse grill] L'Italiano&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;Italian cold cut panini&lt;/p&gt;
+
+&lt;h4&gt;[action] calamari and mussels &amp;#34;pick your sauce&amp;#34;&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;prepared with chili peppers. Fresh mussels, calamari in rich Asian  and marinara sauce&lt;/p&gt;
+
+&lt;h4&gt;[bits and bytes] nacho bar&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;chili, sour cream, cheddar cheese, salsa, refried beans and guacamole&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] creamy tomato squash&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] sweet potato and summer squash&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+</description>
+<nutrition_info></nutrition_info>
+</item>
+
+<item>
+<title>Wed, 18 Sep 2013</title>
+<description>&lt;h3&gt;Breakfast&lt;/h3&gt;
+&lt;h4&gt;[breakfast] corned beef hash&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] scrambled eggs&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] french toast with blueberry compote&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] hard-boiled eggs&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] bacon&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] turkey bacon&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] pork sausage&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] roasted potatoes&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] peas&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] steel cut oats&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] farina&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Dinner&lt;/h3&gt;
+&lt;h4&gt;[comforts] chicken broccoli and ziti&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;sauteed chicken with garlic fresh herbs in a light sauce with garlic bread&lt;/p&gt;
+
+&lt;h4&gt;[smokehouse grill] buffalo chicken wrap&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;chicken fritters fried and seasoned with hot sauce and blue cheese&lt;/p&gt;
+
+&lt;h4&gt;[action] general pao chicken&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;sweet and sour chicken served with Lo Mein noodle and sesame seed&lt;/p&gt;
+
+&lt;h4&gt;[bits and bytes] apple cobbler and peach cobler station&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;caramel and chocolate sauce&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] home made chicken noodle soup&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] vegetable rice soup&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[pure] vegetarian pai tai with Asian noodles&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+</description>
+<nutrition_info></nutrition_info>
+</item>
+
+<item>
+<title>Thu, 19 Sep 2013</title>
+<description>&lt;h3&gt;Breakfast&lt;/h3&gt;
+&lt;h4&gt;[breakfast] quiche Lorraine&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;homemade bread pudding with raisins. eggs to order, sausage, bacon and home made omelets.&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] steel cut oats&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Dinner&lt;/h3&gt;
+&lt;h4&gt;[comforts] chicken coq au vin&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;this classic french dish is composed of mushroom herbs bacon and onion simmered in a red wine sauce&lt;/p&gt;
+
+&lt;h4&gt;[pure] heirloom tomato salad with kidney beans and tofu&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[smokehouse grill] grilled vegetables wrap&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;soft flour tortilla with grilled marinated vegetables with balsamic dressing&lt;/p&gt;
+
+&lt;h4&gt;[action] clam sauce&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;linguine pasta with a red or white sauce&lt;/p&gt;
+
+&lt;h4&gt;[bits and bytes] sicilian pizza bar&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;cheese veggie pepperoni buffalo chicken&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] sweet potato&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] cowboy pork and beans&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+</description>
+<nutrition_info></nutrition_info>
+</item>
+
+<item>
+<title>Fri, 20 Sep 2013</title>
+<description>&lt;h3&gt;Breakfast&lt;/h3&gt;
+&lt;h4&gt;[stockpot] steel cut oats&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[breakfast] cheesy eggs&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;eggs Benedict, multigrain pancakes with sugar free syrup&lt;/p&gt;
+
+&lt;h3&gt;Dinner&lt;/h3&gt;
+&lt;h4&gt;[comforts] fish florentine&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;baked fish with fresh spinach bread crumbs and seasoning topped with cheese&lt;/p&gt;
+
+&lt;h4&gt;[pure] lasagne florentine&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[smokehouse grill] ham and three cheese&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;grilled ham and three cheese sandwich&lt;/p&gt;
+
+&lt;h4&gt;[action] hoisin pork and chicken&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;tender pieces of pork sauteed in a garlic hoisin sauce&lt;/p&gt;
+
+&lt;h4&gt;[bits and bytes] peanut butter and jelly bar&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+</description>
+<nutrition_info></nutrition_info>
+</item>
+
+<item>
+<title>Sat, 21 Sep 2013</title>
+<description>&lt;h3&gt;Brunch&lt;/h3&gt;
+&lt;h4&gt;[breakfast] scrambled eggs, huevos ranchero, pancakes, home fries, bacon, turkey sausage, pork sausage patties&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[comforts] carved ham&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[pure] sweet corn ravioli&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[smokehouse grill] grilled bagel&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;assorted bagels grilled with cream cheese or butter&lt;/p&gt;
+
+&lt;h4&gt;[action] omelet bar&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[bits and bytes] fruit bar&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Dinner&lt;/h3&gt;
+&lt;h4&gt;[comforts] Swedish meatballs&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;fresh ground turkey meatballs accompanied by egg noodles&lt;/p&gt;
+
+&lt;h4&gt;[pure] Indian time&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;curry cauliflower, dal, naan&lt;/p&gt;
+
+&lt;h4&gt;[smokehouse grill] cheese steak with mushroom, onion, pepper&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[action] risotto station&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[bits and bytes] Mediterranean hummus bar&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+</description>
+<nutrition_info></nutrition_info>
+</item>
+
+<item>
+<title>Sun, 22 Sep 2013</title>
+<description>&lt;h3&gt;Brunch&lt;/h3&gt;
+&lt;h4&gt;[breakfast] baked French toast with fruit topping. Sausage, bacon and home fries&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[comforts] chicken chow mein&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;a Chinese American delight served on a bed of steamed rice accompanied by vegetables and crispy noodles&lt;/p&gt;
+
+&lt;h4&gt;[pure] Szechuan tofu stir-fry&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;locally grown tofu with oriental vegetables and spicy Asian sauce&lt;/p&gt;
+
+&lt;h4&gt;[smokehouse grill] egg sausage and cheese and English muffin&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[action] omelets&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[bits and bytes] fruit bar&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] hot cereal Grits&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] cream Maypo&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Dinner&lt;/h3&gt;
+&lt;h4&gt;[comforts] fried chicken&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[comforts] mashed potatoes&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[comforts] corn&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[comforts] snow peas&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[pure] yellow squash and tomato casserole with basil&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[smokehouse grill] pesto chicken wrap&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] sweet potato&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] Manhattan seafood chowder&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[action] orange chicken stir fry&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;flavorful chicken thighs served in a asian orange sauce with thai noodles&lt;/p&gt;
+
+&lt;h4&gt;[bits and bytes] potato bar&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+</description>
+<nutrition_info></nutrition_info>
+</item>
+
+</channel>
+</rss>
+

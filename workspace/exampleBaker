@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+xmlns:admin="http://webns.net/mvcb/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:content="http://purl.org/rss/1.0/modules/content/">
+
+<channel>
+
+<title>MIT - Baker Menu RSS Feed</title>
+
+<link>http://www.bamco.com</link>
+<dc:language>en</dc:language>
+<dc:creator></dc:creator>
+<dc:rights>Copyright 2013</dc:rights>
+
+<item>
+<title>Mon, 16 Sep 2013</title>
+<description>&lt;h3&gt;Dinner&lt;/h3&gt;
+&lt;h4&gt;[pi] assorted pizza&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;Sheppard's pie&lt;/p&gt;
+
+&lt;h4&gt;[bowls] chicken in yellow coconut curry&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;served with rice noddles
+
+Today's sauces
+soy ginger
+sweet and sour
+teriyaki
+coconut yellow curry
+chili garlic
+marinara&lt;/p&gt;
+
+&lt;h4&gt;[comforts] hand craved ham with orange glaze&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;apricot corn bread stuffing, mashed potatoes and roasted brussels sprouts&lt;/p&gt;
+
+&lt;h4&gt;[pure] pineapple fried rice egg roll&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;with teriyaki vegetables&lt;/p&gt;
+
+&lt;h4&gt;[nations] caesar salad bar&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;shirmp, chicken and tofu&lt;/p&gt;
+
+&lt;h4&gt;[market grill] chili dog&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;with french fries&lt;/p&gt;
+
+&lt;h3&gt;Breakfast&lt;/h3&gt;
+&lt;h4&gt;[breakfast special] hot fudge pancakes&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;topped with whipped cream&lt;/p&gt;
+
+</description>
+<nutrition_info></nutrition_info>
+</item>
+
+<item>
+<title>Tue, 17 Sep 2013</title>
+<description>&lt;h3&gt;Dinner&lt;/h3&gt;
+&lt;h4&gt;[pi] assorted pizza&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;beef fried rice&lt;/p&gt;
+
+&lt;h4&gt;[bowls] honey teriyaki bbq chicken stir-fry&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;with fresh zephyr squash which has a nutty taste and steam brown rice&lt;/p&gt;
+
+&lt;h4&gt;[bowls] sauces&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;soy ginger
+sweet and sour
+teriyaki
+coconut yellow curry
+chili garlic
+hoisin peanut&lt;/p&gt;
+
+&lt;h4&gt;[comforts] jerk chicken drums&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;with coconut banana rice and roasted turbin squash flavored with garlic fresh saged&lt;/p&gt;
+
+&lt;h4&gt;[pure] linguine in walnut pesto&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;with fresh buttercup squash and maple cinnamon&lt;/p&gt;
+
+&lt;h4&gt;[nations] baked potato bar&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;cheese sauce, chili and a variety of toppings&lt;/p&gt;
+
+&lt;h4&gt;[market grill] pulled bbq pork&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;slow cooked pork topped with homemade bbq sauce with a cheddar cheese sauce&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] orzo eggplant curry soup&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] split pea soup with ham&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Breakfast&lt;/h3&gt;
+&lt;h4&gt;[breakfast special] sausage gravy over biscuits&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+</description>
+<nutrition_info></nutrition_info>
+</item>
+
+<item>
+<title>Wed, 18 Sep 2013</title>
+<description>&lt;h3&gt;Dinner&lt;/h3&gt;
+&lt;h4&gt;[pi] assorted pizza&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;linguine marinara and roasted vegetable&lt;/p&gt;
+
+&lt;h4&gt;[bowls] mus hu pork&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;pork, hoisin sauce and mandarin pancake&lt;/p&gt;
+
+&lt;h4&gt;[bowls] sauces&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;soy ginger
+sweet and sour
+teriyaki
+coconut yellow curry
+chili garlic
+hoisin peanut&lt;/p&gt;
+
+&lt;h4&gt;[comforts] lemon parmesan tilapia&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;rice pilaf with garlic roasted green beans&lt;/p&gt;
+
+&lt;h4&gt;[pure] south west black bean and sweet potato burrito&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;with scallions rice and garden corn&lt;/p&gt;
+
+&lt;h4&gt;[nations] sushi bar&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;variety of flavors&lt;/p&gt;
+
+&lt;h4&gt;[market grill] grilled teriyaki chicken wrap&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;rolled with basmati rice and shredded napa cabbage&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] pepper chicken and brown rice&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] creamy pesto and potato&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Breakfast&lt;/h3&gt;
+&lt;h4&gt;[breakfast special] eggs down east&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;english muffin topped with scrambled eggs and shrimp&lt;/p&gt;
+
+</description>
+<nutrition_info></nutrition_info>
+</item>
+
+<item>
+<title>Thu, 19 Sep 2013</title>
+<description>&lt;h3&gt;Dinner&lt;/h3&gt;
+&lt;h4&gt;[pi] assorted pizza&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;caribbean coconut fish&lt;/p&gt;
+
+&lt;h4&gt;[bowls] curry chicken&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;chicken, onions and curry sauce served over basmati rice&lt;/p&gt;
+
+&lt;h4&gt;[bowls] sauces&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;curry
+soy ginger
+sweet and sour
+teriyaki
+curry
+marinara
+hoisin peanut
+alfredo&lt;/p&gt;
+
+&lt;h4&gt;[comforts] swedish meatball&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;with egg noodles and fresh garden peas&lt;/p&gt;
+
+&lt;h4&gt;[pure] tofu tacos&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;seasoned tofu with soft shell tacos, mexican rice and roasted mix vegetables&lt;/p&gt;
+
+&lt;h4&gt;[nations] panini&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;self serve&lt;/p&gt;
+
+&lt;h4&gt;[market grill] sausage pepper and onion sub&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;heirloom tomato salad&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] sweet potato and black bean soup&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] spicy asian pork soup&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Breakfast&lt;/h3&gt;
+&lt;h4&gt;[breakfast special] egg fried rice&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+</description>
+<nutrition_info></nutrition_info>
+</item>
+
+<item>
+<title>Fri, 20 Sep 2013</title>
+<description>&lt;h3&gt;Dinner&lt;/h3&gt;
+&lt;h4&gt;[pi] assorted pizza&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;pasta of the day
+Jerk chicken and rice&lt;/p&gt;
+
+&lt;h4&gt;[nations] panini&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;self serve&lt;/p&gt;
+
+&lt;h4&gt;[bowls] sweet soy beef&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;with vegetables served over choice of rice or noddles&lt;/p&gt;
+
+&lt;h4&gt;[comforts] hand carved roast beef&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;with blue cheese mashed potatoes and broccoli with red peppers&lt;/p&gt;
+
+&lt;h4&gt;[pure] pasta toss&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;bow-tie pasta tossed with olive oil, artichoke harts, black olives, tomatoes, feta cheese and fresh spinach served with roasted butternut squash&lt;/p&gt;
+
+&lt;h4&gt;[market grill] fried fish sandwich&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;on a roll with cheese and tarter sauce&lt;/p&gt;
+
+&lt;h3&gt;Breakfast&lt;/h3&gt;
+&lt;h4&gt;[breakfast special] cheddar egg potato skins&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+
+</description>
+<nutrition_info></nutrition_info>
+</item>
+
+<item>
+<title>Sat, 21 Sep 2013</title>
+<description>&lt;h3&gt;Brunch&lt;/h3&gt;
+&lt;h4&gt;[market grill] breakfast sandwiches&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;with full breakfast grill service&lt;/p&gt;
+
+&lt;h4&gt;[bowls] eggs to order&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;omelet station with biscuits, honey, butter and jam&lt;/p&gt;
+
+&lt;h4&gt;[breakfast special] baked southwest fertata&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;pancakes, french toast, cheddar scramble, home fries, turkey sausage, pork sausage, and bacon&lt;/p&gt;
+
+&lt;h4&gt;[comforts] hand carved london broil&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;with chimi churi sauce, roasted potatoes, zucchini and summer squash&lt;/p&gt;
+
+&lt;h4&gt;[pure] hoisin peanut tofu vegetable stir fry&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;served over steamed rice and peas&lt;/p&gt;
+
+&lt;h3&gt;Dinner&lt;/h3&gt;
+&lt;h4&gt;[pi] assorted pizza&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;beef stroganoff over pasta &amp;#34;stevie style&amp;#34;&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] tomato basil&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;meatball noddle soup&lt;/p&gt;
+
+&lt;h4&gt;[bowls] orange chicken&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;stir fried chicken with vegetables in orange sauce topped with fresh pineapple&lt;/p&gt;
+
+&lt;h4&gt;[bowls] sauces&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;orange
+soy ginger
+teriyaki
+marinara
+hoisin peanut
+alfredo
+chili garlic&lt;/p&gt;
+
+&lt;h4&gt;[comforts] mack n' cheese night&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;ham and swiss, bacon and mushroom, classic and buffalo chicken&lt;/p&gt;
+
+&lt;h4&gt;[pure] mack n' cheese night&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;fresh vegetable, and steamed peas&lt;/p&gt;
+
+&lt;h4&gt;[nations] tuna nicoise wrap&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;tuna, black olives capers&lt;/p&gt;
+
+&lt;h4&gt;[market grill] black and bleu chicken&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;cajun season blacken breast with bleu cheese dressing&lt;/p&gt;
+
+</description>
+<nutrition_info></nutrition_info>
+</item>
+
+<item>
+<title>Sun, 22 Sep 2013</title>
+<description>&lt;h3&gt;Brunch&lt;/h3&gt;
+&lt;h4&gt;[market grill] breakfast sandwiches&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;with full breakfast grill service&lt;/p&gt;
+
+&lt;h4&gt;[bowls] eggs to order&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;omelet station with biscuits, honey, butter and jam&lt;/p&gt;
+
+&lt;h4&gt;[breakfast special] hot fudge pancakes topped with whipped cream&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;pancakes, french toast, scrambled eggs, home fries, turkey sausage, pork sausage and bacon&lt;/p&gt;
+
+&lt;h4&gt;[comforts] baked chicken cordon bleu pasta&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;chunk chicken and diced ham in a swiss cheese sauce tossed with gemelli pasta, broccoli and carrots, bacon and potato frittata, peas and diner roll&lt;/p&gt;
+
+&lt;h3&gt;Dinner&lt;/h3&gt;
+&lt;h4&gt;[pi] assorted pizza&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;pasta of the day&lt;/p&gt;
+
+&lt;h4&gt;[stockpot] white bean soup&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;meatball and gravy soup&lt;/p&gt;
+
+&lt;h4&gt;[bowls] beef and mushrooms&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;pasta&lt;/p&gt;
+
+&lt;h4&gt;[bowls] sauces&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;orange
+soy ginger
+teriyaki
+marinara
+hoisin peanut
+sweet and sour
+chili garlic&lt;/p&gt;
+
+&lt;h4&gt;[comforts] roast pork with fennel and garlic&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;garlic mashed red skin potatoes fresh vegetable cajun onion gravy&lt;/p&gt;
+
+&lt;h4&gt;[pure] gnocchi (potato pasta)&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;potato pasta in sun dried tomato sauce&lt;/p&gt;
+
+&lt;h4&gt;[nations] nacho bar&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;cheese sauce chili and toppings&lt;/p&gt;
+
+&lt;h4&gt;[market grill] buffalo chicken wrap&amp;nbsp;&lt;/h4&gt;
+&lt;p&gt;fries&lt;/p&gt;
+
+</description>
+<nutrition_info></nutrition_info>
+</item>
+
+</channel>
+</rss>
+

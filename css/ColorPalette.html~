@@ -1,0 +1,97 @@
+<html>
+<head>
+<style>
+body {
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+}
+</style>
+</head>
+<body>
+<h2>Light Color Palette</h2>
+							<div class="colorpalette">
+							<div style="background-color: #808180;" title="#808180"><span>#808180</span></div>
+<div style="background-color: #a38085;" title="#a38085"><span>#a38085</span></div>
+<div style="background-color: #929380;" title="#929380"><span>#929380</span></div>
+<div style="background-color: #c58088;" title="#c58088"><span>#c58088</span></div>
+<div style="background-color: #bf9880;" title="#bf9880"><span>#bf9880</span></div>
+<div style="background-color: #c6a790;" title="#c6a790"><span>#c6a790</span></div>
+<div style="background-color: #bfb1a8;" title="#bfb1a8"><span>#bfb1a8</span></div>
+							</div>
+							<h2>Medium Color Palette</h2>
+							<div class="colorpalette">
+							<div style="background-color: #010300;" title="#010300"><span>#010300</span></div>
+<div style="background-color: #47000a;" title="#47000a"><span>#47000a</span></div>
+<div style="background-color: #242600;" title="#242600"><span>#242600</span></div>
+<div style="background-color: #8b0110;" title="#8b0110"><span>#8b0110</span></div>
+<div style="background-color: #7e3000;" title="#7e3000"><span>#7e3000</span></div>
+<div style="background-color: #8d4f20;" title="#8d4f20"><span>#8d4f20</span></div>
+<div style="background-color: #7f6250;" title="#7f6250"><span>#7f6250</span></div>
+							</div>
+							<h2>Dark Color Palette</h2>
+							<div class="colorpalette">
+							<div style="background-color: #000100;" title="#000100"><span>#000100</span></div>
+<div style="background-color: #1c0004;" title="#1c0004"><span>#1c0004</span></div>
+<div style="background-color: #0e0f00;" title="#0e0f00"><span>#0e0f00</span></div>
+<div style="background-color: #370006;" title="#370006"><span>#370006</span></div>
+<div style="background-color: #321300;" title="#321300"><span>#321300</span></div>
+<div style="background-color: #381f0c;" title="#381f0c"><span>#381f0c</span></div>
+<div style="background-color: #322720;" title="#322720"><span>#322720</span></div>
+							</div>
+							
+												
+												
+						<h2>Complete Color Palette</h2>
+						<div class="colorpalette">
+						<div style="background-color: #7f6250;" title="#7f6250"><span>#7f6250</span></div>
+<div style="background-color: #242600;" title="#242600"><span>#242600</span></div>
+<div style="background-color: #010302;" title="#010302"><span>#010302</span></div>
+<div style="background-color: #010300;" title="#010300"><span>#010300</span></div>
+<div style="background-color: #e05f26;" title="#e05f26"><span>#e05f26</span></div>
+<div style="background-color: #47000a;" title="#47000a"><span>#47000a</span></div>
+<div style="background-color: #a37d7a;" title="#a37d7a"><span>#a37d7a</span></div>
+<div style="background-color: #8b0110;" title="#8b0110"><span>#8b0110</span></div>
+<div style="background-color: #ab621d;" title="#ab621d"><span>#ab621d</span></div>
+<div style="background-color: #fc9538;" title="#fc9538"><span>#fc9538</span></div>
+<div style="background-color: #fed18e;" title="#fed18e"><span>#fed18e</span></div>
+<div style="background-color: #d4805b;" title="#d4805b"><span>#d4805b</span></div>
+<div style="background-color: #ecbb90;" title="#ecbb90"><span>#ecbb90</span></div>
+<div style="background-color: #dea16b;" title="#dea16b"><span>#dea16b</span></div>
+<div style="background-color: #bb8265;" title="#bb8265"><span>#bb8265</span></div>
+<div style="background-color: #8c8f02;" title="#8c8f02"><span>#8c8f02</span></div>
+<div style="background-color: #f3c6a5;" title="#f3c6a5"><span>#f3c6a5</span></div>
+<div style="background-color: #bd8668;" title="#bd8668"><span>#bd8668</span></div>
+<div style="background-color: #3e2119;" title="#3e2119"><span>#3e2119</span></div>
+<div style="background-color: #b57134;" title="#b57134"><span>#b57134</span></div>
+<div style="background-color: #f6a643;" title="#f6a643"><span>#f6a643</span></div>
+<div style="background-color: #b74308;" title="#b74308"><span>#b74308</span></div>
+<div style="background-color: #e0bf92;" title="#e0bf92"><span>#e0bf92</span></div>
+<div style="background-color: #78580b;" title="#78580b"><span>#78580b</span></div>
+<div style="background-color: #fce8cf;" title="#fce8cf"><span>#fce8cf</span></div>
+<div style="background-color: #fed885;" title="#fed885"><span>#fed885</span></div>
+<div style="background-color: #892104;" title="#892104"><span>#892104</span></div>
+<div style="background-color: #bc7f3e;" title="#bc7f3e"><span>#bc7f3e</span></div>
+<div style="background-color: #ac4b06;" title="#ac4b06"><span>#ac4b06</span></div>
+<div style="background-color: #fefef6;" title="#fefef6"><span>#fefef6</span></div>
+<div style="background-color: #c75300;" title="#c75300"><span>#c75300</span></div>
+<div style="background-color: #7e3000;" title="#7e3000"><span>#7e3000</span></div>
+<div style="background-color: #c1752a;" title="#c1752a"><span>#c1752a</span></div>
+<div style="background-color: #debb95;" title="#debb95"><span>#debb95</span></div>
+<div style="background-color: #c4a787;" title="#c4a787"><span>#c4a787</span></div>
+<div style="background-color: #c97e3b;" title="#c97e3b"><span>#c97e3b</span></div>
+<div style="background-color: #fdc896;" title="#fdc896"><span>#fdc896</span></div>
+<div style="background-color: #f4b589;" title="#f4b589"><span>#f4b589</span></div>
+<div style="background-color: #86390f;" title="#86390f"><span>#86390f</span></div>
+<div style="background-color: #edb771;" title="#edb771"><span>#edb771</span></div>
+<div style="background-color: #892901;" title="#892901"><span>#892901</span></div>
+<div style="background-color: #c8a48a;" title="#c8a48a"><span>#c8a48a</span></div>
+<div style="background-color: #713d0e;" title="#713d0e"><span>#713d0e</span></div>
+<div style="background-color: #884511;" title="#884511"><span>#884511</span></div>
+<div style="background-color: #b25100;" title="#b25100"><span>#b25100</span></div>
+<div style="background-color: #993a00;" title="#993a00"><span>#993a00</span></div>
+<div style="background-color: #7f3301;" title="#7f3301"><span>#7f3301</span></div>
+<div style="background-color: #8d4f20;" title="#8d4f20"><span>#8d4f20</span></div>
+<div style="background-color: #d4c3b3;" title="#d4c3b3"><span>#d4c3b3</span></div>
+						</div>
+</body>
+</html>
