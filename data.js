@@ -139,9 +139,9 @@ function parseHallData(xml, hall) {
 				
 				// Tragically, not all hours are integers. For instance, Baker House Dining opens at 5:30. Here's a workaround:
 				var beginHour = Math.floor(mealTimes.begin);
-				var beginMinutes = Math.floor((mealTimes.begin - begin_hour) * 60);
+				var beginMinutes = Math.floor((mealTimes.begin - beginHour) * 60);
 				var endHour = Math.floor(mealTimes.end);
-				var endMinutes = Math.floor((mealTimes.end - end_hour) * 60);
+				var endMinutes = Math.floor((mealTimes.end - endHour) * 60);
 				
 				// Now we set the beginning/ending hours and minutes
 				begin.setHours(beginHour, beginMinutes, 0, 0);
@@ -175,8 +175,9 @@ function parseHallData(xml, hall) {
 // Temporary print function to prove that data was transfered from RSS to Object-Oriented data structures smoothly
 function printHallData(hall, pId) { // hall:  the DiningHall object to be printed; pId: the id of the <p> object in index.html where data will be displayed
 	var outHtml = "<h2>" + hall.hallName + "</h2>\n";
-	for (var i = 0; i < halls[0].meals.length; i++) {
-		var meal = halls[0].meals[i];
+
+	for (var i = 0; i < hall.meals.length; i++) {
+		var meal = hall.meals[i];
 		outHtml += "<h3>" + meal.description + " (" + meal.timeBegin.toLocaleString() + " - " + meal.timeEnd.toLocaleString() + ")</h3>\n";
 		outHtml += "<ul>\n";
 		for (var f = 0; f < meal.foodItems.length; f++) {
@@ -187,6 +188,7 @@ function printHallData(hall, pId) { // hall:  the DiningHall object to be printe
 		}
 		outHtml += "</ul>\n";
 	}
+
 	$("#" + pId).html(outHtml);
 }
 // Load, parse, and print the Simmons RSS feed:
@@ -219,7 +221,7 @@ function loadMaseeh() {
 	$.get('fetch.php?h=maseeh', function(data) {
 		halls[1] = new DiningHall("h1", "Maseeh");
 		var hall = halls[1]; // Make fewer keystrokes with these time saving variables
-		var times = hall.times;
+		var times = hall.mealTimes;
 		
 		// Assign meal times
 		times.push(new MealTime("Breakfast", new TimeRange(8, 11)));
@@ -239,7 +241,7 @@ function loadBaker() {
 	$.get('fetch.php?h=baker', function(data) {
 		halls[2] = new DiningHall("h2", "Baker");
 		var hall = halls[2]; // Make fewer keystrokes with these time saving variables
-		var times = hall.times;
+		var times = hall.mealTimes;
 		
 		// Assign meal times
 		times.push(new MealTime("Breakfast", new TimeRange(8, 10)));
@@ -257,7 +259,7 @@ function loadMcCormick() {
 	$.get('fetch.php?h=mccormick', function(data) {
 		halls[3] = new DiningHall("h3", "McCormick");
 		var hall = halls[3]; // Make fewer keystrokes with these time saving variables
-		var times = hall.times;
+		var times = hall.mealTimes;
 		
 		// Assign meal times
 		times.push(new MealTime("Breakfast", new TimeRange(8, 10)));
@@ -278,7 +280,7 @@ function loadNext() {
 	$.get('fetch.php?h=next', function(data) {
 		halls[4] = new DiningHall("h4", "Next");
 		var hall = halls[4]; // Make fewer keystrokes with these time saving variables
-		var times = hall.times;
+		var times = hall.mealTimes;
 		
 		// Assign meal times
 		times.push(new MealTime("Breakfast", new TimeRange(8, 10)));
