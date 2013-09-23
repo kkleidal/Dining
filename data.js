@@ -1,5 +1,6 @@
 /*** Data management     ***/
 /*** Author:  Ken Leidal ***/
+// John Parsons contributed like 6 lines of code or something
 
 /* Prototypes */
 // A prototype class which holds data corresponding to a food item served during a meal, including its tag, name, and any additional description provided
@@ -75,6 +76,7 @@ var hallsTemp = new Array(5); // TODO:  Change so that the data is loaded into t
 /* Loads all data into halls variable.  Called from index.html */
 function loadDiningData() {
 	hallsTemp = new Array(5);
+	// TODO: a more DRY way of loading more dining halls?
 	loadSimmons();
 	loadMaseeh();
 	loadBaker();
@@ -134,8 +136,17 @@ function parseHallData(xml, hall) {
 				// turn time ranges based on hours of operation into actual Date objects:
 				var begin = new Date(date.valueOf());
 				var end = new Date(date.valueOf());
-				begin.setHours(mealTimes.begin, 0, 0, 0);
-				end.setHours(mealTimes.end, 0, 0, 0);
+				
+				// Tragically, not all hours are integers. For instance, Baker House Dining opens at 5:30. Here's a workaround:
+				var beginHour = Math.floor(mealTimes.begin);
+				var beginMinutes = Math.floor((mealTimes.begin - begin_hour) * 60);
+				var endHour = Math.floor(mealTimes.end);
+				var endMinutes = Math.floor((mealTimes.end - end_hour) * 60);
+				
+				// Now we set the beginning/ending hours and minutes
+				begin.setHours(beginHour, beginMinutes, 0, 0);
+				end.setHours(endHour, endMinutes, 0, 0);
+				
 				if (mealTimes.end < 5) end.setDate(end.getDate() + 1);
 				// add the meal to the dining hall
 				hall.meals.push(new Meal(begin, end, mealName));
@@ -196,38 +207,87 @@ function loadSimmons() {
 		parseHallData(data, halls[0]);
 		
 		// Call temporary print function to prove that the data was parsed smoothly
+		// TODO: update to actual print function? - John
 		printHallData(halls[0], "simmons");
 	}, 'text');
 }
 // Load, parse, and print the Maseeh RSS feed:
 function loadMaseeh() {
-	/* TODO:  Create code which parses data from Maseeh dining */
 	// AJAX call with JQuery to PHP to fetch RSS feed from Bon Appetit
+	
+	// Same as above: we download the data for Masseeh
 	$.get('fetch.php?h=maseeh', function(data) {
-		$("#maseeh").html(data.replace("<","&lt;").replace(">","&gt;"));
+		halls[1] = new DiningHall("h1", "Maseeh");
+		var hall = halls[1]; // Make fewer keystrokes with these time saving variables
+		var times = hall.times;
+		
+		// Assign meal times
+		times.push(new MealTime("Breakfast", new TimeRange(8, 11)));
+		times.push(new MealTime("Lunch", new TimeRange(11, 15)));
+		times.push(new MealTime("Brunch", new TimeRange(10, 13)));
+		times.push(new MealTime("Dinner", new TimeRange(17, 21)));
+		
+		// Parse and print everything
+		parseHallData(data, hall);
+		printHallData(hall, "maseeh")
+		
 	}, 'text');
 }
 // Load, parse, and print the Baker RSS feed:
 function loadBaker() {
-	/* TODO:  Create code which parses data from Baker dining */
 	// AJAX call with JQuery to PHP to fetch RSS feed from Bon Appetit
 	$.get('fetch.php?h=baker', function(data) {
-		$("#baker").html(data.replace("<","&lt;").replace(">","&gt;"));
+		halls[2] = new DiningHall("h2", "Baker");
+		var hall = halls[2]; // Make fewer keystrokes with these time saving variables
+		var times = hall.times;
+		
+		// Assign meal times
+		times.push(new MealTime("Breakfast", new TimeRange(8, 10)));
+		times.push(new MealTime("Brunch", new TimeRange(10, 13)));
+		times.push(new MealTime("Dinner", new TimeRange(17.5, 20.5))); // The .5 represents 30 minutes when converted
+		
+		// Parse and print everything
+		parseHallData(data, hall);
+		printHallData(hall, "baker")
 	}, 'text');
 }
 // Load, parse, and print the McCormick RSS feed:
 function loadMcCormick() {
-	/* TODO:  Create code which parses data from McCormick dining */
 	// AJAX call with JQuery to PHP to fetch RSS feed from Bon Appetit
 	$.get('fetch.php?h=mccormick', function(data) {
-		$("#mccormick").html(data.replace("<","&lt;").replace(">","&gt;"));
+		halls[3] = new DiningHall("h3", "McCormick");
+		var hall = halls[3]; // Make fewer keystrokes with these time saving variables
+		var times = hall.times;
+		
+		// Assign meal times
+		times.push(new MealTime("Breakfast", new TimeRange(8, 10)));
+		times.push(new MealTime("Brunch", new TimeRange(10, 13)));
+		times.push(new MealTime("Dinner", new TimeRange(17, 20)));
+		
+		// Parse and print everything
+		parseHallData(data, hall);
+		printHallData(hall, "mccormick")
+		
 	}, 'text');
 }
 // Load, parse, and print the Next RSS feed:
 function loadNext() {
-	/* TODO:  Create code which parses data from Next dining */
 	// AJAX call with JQuery to PHP to fetch RSS feed from Bon Appetit
+	// Not actually sure if Next House is connected to the Internet due to its remote location.
+	// TODO: site inspection of Next house to verify/refute this claim.
 	$.get('fetch.php?h=next', function(data) {
-		$("#next").html(data.replace("<","&lt;").replace(">","&gt;"));
+		halls[4] = new DiningHall("h4", "Next");
+		var hall = halls[4]; // Make fewer keystrokes with these time saving variables
+		var times = hall.times;
+		
+		// Assign meal times
+		times.push(new MealTime("Breakfast", new TimeRange(8, 10)));
+		times.push(new MealTime("Brunch", new TimeRange(10, 13)));
+		times.push(new MealTime("Dinner", new TimeRange(17.5, 20.5))); // The .5 represents 30 minutes when converted
+		
+		// Parse and print everything
+		parseHallData(data, hall);
+		printHallData(hall, "next")
+		
 	}, 'text');
 }
