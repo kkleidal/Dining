@@ -1,6 +1,5 @@
-/*** Data management     ***/
-/*** Author:  Ken Leidal ***/
-// John Parsons contributed like 6 lines of code or something
+/*** Data management
+     Authors:  Ken Leidal (kkleidal@mit.edu) and John Parsons (parsonsj@mit.edu) ***/
 
 /* Prototypes */
 // A prototype class which holds data corresponding to a food item served during a meal, including its tag, name, and any additional description provided
@@ -25,6 +24,10 @@ function Meal(begin, end, desc) {
 		}
 		return tags;
 	}
+	// A function which returns whether or not the meal is occuring at the given time
+	this.occursAtTime = function(time) {
+		return (this.timeBegin <= time && this.timeEnd > time);
+	}
 }
 // A prototype class which holds all the relevant data for each dining hall, including meals found in the RSS feed
 function DiningHall(svgID, hall_Name) {
@@ -35,7 +38,7 @@ function DiningHall(svgID, hall_Name) {
 	// A function which finds any meals which are occuring at the given time
 	this.lookupMeal = function(time) {
 		for (var i = 0; i < this.meals.length; i++) {
-			if (this.meals[i].timeBegin <= time && this.meals[i].timeEnd > time) {
+			if (this.meals[i].occursAtTime(time)) {
 				return this.meals[i];
 			}
 		}
@@ -175,9 +178,12 @@ function parseHallData(xml, hall) {
 // Temporary print function to prove that data was transfered from RSS to Object-Oriented data structures smoothly
 function printHallData(hall, pId) { // hall:  the DiningHall object to be printed; pId: the id of the <p> object in index.html where data will be displayed
 	var outHtml = "<h2>" + hall.hallName + "</h2>\n";
-
+	var mealsServed = 0;
+	var now = new Date();
 	for (var i = 0; i < hall.meals.length; i++) {
 		var meal = hall.meals[i];
+		if (!meal.occursAtTime(now)) continue;
+		mealsServed++;
 		outHtml += "<h3>" + meal.description + " (" + meal.timeBegin.toLocaleString() + " - " + meal.timeEnd.toLocaleString() + ")</h3>\n";
 		outHtml += "<ul>\n";
 		for (var f = 0; f < meal.foodItems.length; f++) {
@@ -188,7 +194,7 @@ function printHallData(hall, pId) { // hall:  the DiningHall object to be printe
 		}
 		outHtml += "</ul>\n";
 	}
-
+	if (mealsServed == 0) outHtml += "<p>Nothing :(</p>";
 	$("#" + pId).html(outHtml);
 }
 // Load, parse, and print the Simmons RSS feed:
