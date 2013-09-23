@@ -2,16 +2,19 @@
 /*** Author:  Ken Leidal ***/
 
 /* Prototypes */
+// A prototype class which holds data corresponding to a food item served during a meal, including its tag, name, and any additional description provided
 function FoodItem(tagLine, foodName) {
 	this.tag = tagLine;
 	this.food = foodName;
 	this.desc = "";
 }
+// A prototype class which holds all the relevant data for each meal, including times (and dates) and food items served
 function Meal(begin, end, desc) {
 	this.timeBegin = begin;
 	this.timeEnd = end;
 	this.description = desc;
 	this.foodItems = new Array();
+	// A function which returns all unique food item tags
 	this.getTags = function() {
 		var tags = new Array();
 		for (var i = 0; i < this.foodItems.length; i++) {
@@ -22,11 +25,13 @@ function Meal(begin, end, desc) {
 		return tags;
 	}
 }
+// A prototype class which holds all the relevant data for each dining hall, including meals found in the RSS feed
 function DiningHall(svgID, hall_Name) {
 	this.id = svgID;
 	this.hallName = hall_Name;
 	this.mealTimes = new Array();
 	this.meals = new Array();
+	// A function which finds any meals which are occuring at the given time
 	this.lookupMeal = function(time) {
 		for (var i = 0; i < this.meals.length; i++) {
 			if (this.meals[i].timeBegin <= time && this.meals[i].timeEnd > time) {
@@ -35,12 +40,14 @@ function DiningHall(svgID, hall_Name) {
 		}
 		return -1;
 	};
+	// A function which returns a TimeRange prototype if a MealTime with the given name is found in the DiningHall's mealTimes array
 	this.getMealTime = function(name) {
 		for (var i = 0; i < this.mealTimes.length; i++) {
 			if (this.mealTimes[i].mealName == name) return this.mealTimes[i].times;
 		}
 		return -1;
 	}
+	// Returns all unique food item tags found in its meals
 	this.getTags = function() {
 		var tags = new Array();
 		for (var i = 0; i < this.meals.length; i++) {
@@ -52,18 +59,20 @@ function DiningHall(svgID, hall_Name) {
 		return tags;
 	}
 }
+// A prototype class which tracks meal names and times to be matched against the meal names found in the RSS feed
 function MealTime(meal_Name, timeRange) {
 	this.mealName = meal_Name;
 	this.times = timeRange;
 }
+// A prototype class which provides time ranges (in 24-hour time) for meals.  Very primitive
 function TimeRange(start, finish) {
 	this.begin = start;
 	this.end = finish;
 }
 
 var halls = new Array(5);
-var hallsTemp = new Array(5);
-/* Loads all data into halls variable */
+var hallsTemp = new Array(5); // TODO:  Change so that the data is loaded into this variable and then transfered into the halls variable to provide seemless transition for new data
+/* Loads all data into halls variable.  Called from index.html */
 function loadDiningData() {
 	hallsTemp = new Array(5);
 	loadSimmons();
@@ -73,13 +82,16 @@ function loadDiningData() {
 	loadNext();
 	halls = hallsTemp;
 }
+// function which deletes up to and including a designated search term and then returns the new substring
 function deleteTo(orig, searchFor) {
 	if (!(orig.indexOf(searchFor) >= 0)) return "";
 	var newStr = orig.substring(orig.indexOf(searchFor) + searchFor.length, orig.length);
 	return newStr;
 }
+// Turns RSS into Object-Oriented data structure -- it's magic!
 function parseHallData(xml, hall) {
 	while (xml.indexOf("<item>") >= 0) {
+		// Strip off the header and prepare for parsing:
 		xml = deleteTo(xml, "<item>");
 		xml = deleteTo(xml, "<title>");
 		var strDate = xml.substring(0, xml.indexOf("</title>"));
@@ -90,13 +102,16 @@ function parseHallData(xml, hall) {
 		/* alert(html); */
 		while (html.indexOf("<h4>") >= 0 || html.indexOf("<h3>") >= 0 || html.indexOf("<p>") >= 0) {
 			/* Tag available for parsing */
+			// find the indices of the next start tags:
 			var indexH3 = html.indexOf("<h3>");
 			var indexH4 = html.indexOf("<h4>");
 			var indexP = html.indexOf("<p>");
+			// if there are no more of a certain start tag, hack so that the logic to determine the next start tag actually works:
 			if (indexH3 == -1) indexH3 = html.length;
 			if (indexH4 == -1) indexH4 = html.length;
 			if (indexP == -1) indexP = html.length;
 			if (indexP != html.length && indexP < indexH3 && indexP < indexH4) {
+				// If there is additional data for a food item (found in paragraph tags), add it to the last recorded food item as a description
 				html = deleteTo(html, "<p>");
 				var desc = html.substring(0, html.indexOf("</p>"));
 				var foods = hall.meals[hall.meals.length - 1].foodItems;
@@ -116,11 +131,13 @@ function parseHallData(xml, hall) {
 					mealTimes.begin = 0;
 					mealTimes.end = 24;
 				}
+				// turn time ranges based on hours of operation into actual Date objects:
 				var begin = new Date(date.valueOf());
 				var end = new Date(date.valueOf());
 				begin.setHours(mealTimes.begin, 0, 0, 0);
 				end.setHours(mealTimes.end, 0, 0, 0);
 				if (mealTimes.end < 5) end.setDate(end.getDate() + 1);
+				// add the meal to the dining hall
 				hall.meals.push(new Meal(begin, end, mealName));
 				html = deleteTo(html, "</h3>");
 			} else if (indexH4 != html.length) {
@@ -128,64 +145,88 @@ function parseHallData(xml, hall) {
 				html = deleteTo(html, "<h4>");
 				var foodDesc = html.substring(0, html.indexOf("</h4>"));
 				var tag = "";
+				// Get food tag (the bit of data between the '[' and the ']')
 				if (foodDesc.indexOf("[") >= 0) {
 					foodDesc = deleteTo(foodDesc, "[");
 					tag = foodDesc.substring(0, foodDesc.indexOf("]"));
 					foodDesc = deleteTo(foodDesc, "]");
 				}
 				foodDesc = foodDesc.trim();
+				// take what remains as the food's name
 				food = new FoodItem(tag, foodDesc);
+				// add the food to the newest meal
 				hall.meals[hall.meals.length - 1].foodItems.push(food);
 				html = deleteTo(html, "</h4>");
 			}
 		}
 	}
 }
+// Temporary print function to prove that data was transfered from RSS to Object-Oriented data structures smoothly
+function printHallData(hall, pId) { // hall:  the DiningHall object to be printed; pId: the id of the <p> object in index.html where data will be displayed
+	var outHtml = "<h2>" + hall.hallName + "</h2>\n";
+	for (var i = 0; i < halls[0].meals.length; i++) {
+		var meal = halls[0].meals[i];
+		outHtml += "<h3>" + meal.description + " (" + meal.timeBegin.toLocaleString() + " - " + meal.timeEnd.toLocaleString() + ")</h3>\n";
+		outHtml += "<ul>\n";
+		for (var f = 0; f < meal.foodItems.length; f++) {
+			var food = meal.foodItems[f];
+			outHtml += "<li>" + food.tag + ": " + food.food;
+			if (food.desc != "") outHtml += " (" + food.desc + ")";
+			outHtml += "</li>\n";
+		}
+		outHtml += "</ul>\n";
+	}
+	$("#" + pId).html(outHtml);
+}
+// Load, parse, and print the Simmons RSS feed:
 function loadSimmons() {
 	/* TODO:  Create code which parses data from Simmons dining */
+	// AJAX call with JQuery to PHP to fetch RSS feed from Bon Appetit
 	$.get('fetch.php?h=simmons', function(data) {
+		// Create a new DiningHall with SVG id (for graphics use later) "h0" and name "Simmons" in array halls, which has indices 0->4 for each dining hall
 		halls[0] = new DiningHall("h0","Simmons");
+
+		// Assign Simmons's meal times, since the RSS feed doesn't include time data
 		halls[0].mealTimes.push(new MealTime("Breakfast", new TimeRange(8, 10)));
 		halls[0].mealTimes.push(new MealTime("Dinner", new TimeRange(17, 20)));
 		halls[0].mealTimes.push(new MealTime("Brunch", new TimeRange(10, 13)));
 		halls[0].mealTimes.push(new MealTime("Late Night", new TimeRange(21, 1)));
+
+		// Parse the RSS feed and dump the data into the Object-Oriented Data Structure
 		parseHallData(data, halls[0]);
-		var outHtml = "<h2>Simmons</h2>\n";
-		for (var i = 0; i < halls[0].meals.length; i++) {
-			var meal = halls[0].meals[i];
-			outHtml += "<h3>" + meal.description + " (" + meal.timeBegin.toLocaleString() + " - " + meal.timeEnd.toLocaleString() + ")</h3>\n";
-			outHtml += "<ul>\n";
-			for (var f = 0; f < meal.foodItems.length; f++) {
-				var food = meal.foodItems[f];
-				outHtml += "<li>" + food.tag + ": " + food.food;
-				if (food.desc != "") outHtml += " (" + food.desc + ")";
-				outHtml += "</li>\n";
-			}
-			outHtml += "</ul>\n";
-		}
-		$("#simmons").html(outHtml);
+		
+		// Call temporary print function to prove that the data was parsed smoothly
+		printHallData(halls[0], "simmons");
 	}, 'text');
 }
+// Load, parse, and print the Maseeh RSS feed:
 function loadMaseeh() {
 	/* TODO:  Create code which parses data from Maseeh dining */
+	// AJAX call with JQuery to PHP to fetch RSS feed from Bon Appetit
 	$.get('fetch.php?h=maseeh', function(data) {
 		$("#maseeh").html(data.replace("<","&lt;").replace(">","&gt;"));
 	}, 'text');
 }
+// Load, parse, and print the Baker RSS feed:
 function loadBaker() {
 	/* TODO:  Create code which parses data from Baker dining */
+	// AJAX call with JQuery to PHP to fetch RSS feed from Bon Appetit
 	$.get('fetch.php?h=baker', function(data) {
 		$("#baker").html(data.replace("<","&lt;").replace(">","&gt;"));
 	}, 'text');
 }
+// Load, parse, and print the McCormick RSS feed:
 function loadMcCormick() {
 	/* TODO:  Create code which parses data from McCormick dining */
+	// AJAX call with JQuery to PHP to fetch RSS feed from Bon Appetit
 	$.get('fetch.php?h=mccormick', function(data) {
 		$("#mccormick").html(data.replace("<","&lt;").replace(">","&gt;"));
 	}, 'text');
 }
+// Load, parse, and print the Next RSS feed:
 function loadNext() {
 	/* TODO:  Create code which parses data from Next dining */
+	// AJAX call with JQuery to PHP to fetch RSS feed from Bon Appetit
 	$.get('fetch.php?h=next', function(data) {
 		$("#next").html(data.replace("<","&lt;").replace(">","&gt;"));
 	}, 'text');
