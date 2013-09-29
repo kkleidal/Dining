@@ -1,32 +1,310 @@
-<!DOCTYPE html>
-<head>
-<meta charset="UTF-8">
-<title>What's Cooking, MIT?</title>
 
-<link rel="stylesheet" type="text/css" href="./css/main.css">
-<meta http-equiv="refresh" content="300">
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="data.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	loadDiningData();
-});
-</script>
-</head>
-
-<body>
-<div id="desc">
-<p id="simmons"></p>
-<hr/>
-<p id="maseeh"></p>
-<hr/>
-<p id="baker"></p>
-<hr/>
-<p id="mccormick"></p>
-<hr/>
-<p id="next"></p>
-</div>
-
-</body>
+<!DOCTYPE HTML>
+<!--
+   Ex Machina: A responsive HTML5 website template by HTML5Templates.com
+   Released for free under the Creative Commons Attribution 3.0 license (html5templates.com/license)
+   Visit http://html5templates.com for more great templates or follow us on Twitter @HTML5T
+   -->
+<html>
+   <head>
+      <title>What's Cooking, MIT?</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <noscript>
+         <link rel="stylesheet" href="css/5grid/core.css" />
+         <link rel="stylesheet" href="css/5grid/core-desktop.css" />
+         <link rel="stylesheet" href="css/5grid/core-1200px.css" />
+         <link rel="stylesheet" href="css/5grid/core-noscript.css" />
+         <link rel="stylesheet" href="css/style.css" />
+         <link rel="stylesheet" href="css/style-desktop.css" />
+      </noscript>
+      <script src="css/5grid/jquery.js"></script>
+      <script src="css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+      <script src="js/gui_ctrl.js"></script>
+      <script src="js/data.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function(){
+         	guiCtrlInit();
+         });
+      </script>
+      <!--[if IE 9]>
+      <link rel="stylesheet" href="css/style-ie9.css" />
+      <![endif]-->
+   </head>
+   <body class="homepage">
+      <div id="header-wrapper">
+         <header id="header">
+            <div class="5grid-layout">
+               <div class="row">
+                  <div class="4u" id="logo">
+                     <h1><a href="#" class="mobileUI-site-name">What's Cooking, MIT?</a></h1>
+                     <p></p>
+                  </div>
+                  <div class="8u" id="menu">
+                     <nav class="mobileUI-site-nav">
+                        <ul>
+                           <li class="current_page_item" id="mnuMaseeh"><a href="#" id="lnkMaseeh" onclick="clickLnk(diningHalls.indexOf('Maseeh'));">Maseeh</a></li>
+                           <li id="mnuBaker"><a href="#" id="lnkBaker" onclick="clickLnk(diningHalls.indexOf('Baker'));">Baker</a></li>
+                           <li id="mnuSimmons"><a href="#" id="lnkSimmons" onclick="clickLnk(diningHalls.indexOf('Simmons'));">Simmons</a></li>
+                           <li id="mnuMcCormick"><a href="#" id="lnkMcCormick" onclick="clickLnk(diningHalls.indexOf('McCormick'));">McCormick</a></li>
+                           <li id="mnuNext"><a href="#" id="lnkNext" onclick="clickLnk(diningHalls.indexOf('Next'));">Next</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </header>
+      </div>
+      <div class="5grid-layout">
+         <div class="row">
+            <div id="banner" class="12u">
+               <div class="container" id="mapWrapper">
+                  <div id="divMap">
+                     <div id="mapBgShade" class="shade">
+                        <svg
+                           xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+                           xmlns:dc="http://purl.org/dc/elements/1.1/"
+                           xmlns:cc="http://creativecommons.org/ns#"
+                           xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                           xmlns:svg="http://www.w3.org/2000/svg"
+                           xmlns="http://www.w3.org/2000/svg"
+                           xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                           xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                           width="807.21002"
+                           height="420"
+                           id="svg2"
+                           version="1.1"
+                           inkscape:version="0.48.4 r9939"
+                           sodipodi:docname="map.svg">
+                           <defs
+                              id="defs4">
+                              <filter id="dropGlow" width="1.5" height="1.5" x="-.25" y="-.25">
+            <feGaussianBlur id="feGaussianBlur5384" in="SourceAlpha" stdDeviation="15.000000" result="blur"/>
+            <feColorMatrix id="feColorMatrix5386" result="bluralpha" type="matrix" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 0.800000 0 "/>
+            <feOffset id="feOffset5388" in="bluralpha" dx="0.000000" dy="0.000000" result="offsetBlur"/>
+            <feMerge id="feMerge5390">
+                <feMergeNode id="feMergeNode5392" in="offsetBlur"/>
+                <feMergeNode id="feMergeNode5394" in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+                           </defs>
+                           <sodipodi:namedview
+                              id="base"
+                              pagecolor="#ffffff"
+                              bordercolor="#666666"
+                              borderopacity="1.0"
+                              inkscape:pageopacity="0.0"
+                              inkscape:pageshadow="2"
+                              inkscape:zoom="1.4666667"
+                              inkscape:cx="467.07018"
+                              inkscape:cy="207.38787"
+                              inkscape:document-units="px"
+                              inkscape:current-layer="layer1"
+                              showgrid="false"
+                              inkscape:window-width="1920"
+                              inkscape:window-height="1005"
+                              inkscape:window-x="1911"
+                              inkscape:window-y="173"
+                              inkscape:window-maximized="1" />
+                           <metadata
+                              id="metadata7">
+                              <rdf:RDF>
+                                 <cc:Work
+                                    rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type
+                                       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                    <dc:title></dc:title>
+                                 </cc:Work>
+                              </rdf:RDF>
+                           </metadata>
+                           <g
+                              inkscape:label="background"
+                              inkscape:groupmode="layer"
+                              id="layer1"
+                              transform="translate(0,-632.36218)" />
+                           <g
+                              inkscape:groupmode="layer"
+                              id="graphicsBaker"
+                              inkscape:label="Baker"
+                              transform="translate(0,-579)">
+                             <a href="#" id="bldgBaker" class="bldgLink" onclick="clickLnk(diningHalls.indexOf('Baker'));">
+                              <path
+                                 style="fill:#00aad4;stroke:#23445e;stroke-width:0.85232419;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                                 d="m 497.64811,898.839 -2.55698,-3.4093 1.70466,-1.70465 -1.27849,-1.27848 0.85232,-0.85233 -1.70465,-1.70464 3.4093,-1.70465 8.09708,-14.06335 14.48951,0.42616 3.4093,-5.96626 4.68778,0.42615 0,-1.70464 21.30811,0 3.83545,3.83546 7.24475,-5.11395 2.13081,2.55698 2.13082,-0.85233 3.83545,0 0,5.96626 8.94941,-4.68778 1.27849,1.27849 -2.13081,1.27849 2.55696,3.40929 -0.42615,1.27849 8.09708,10.22789 -2.13081,1.70465 1.27848,2.55697 -0.85233,1.27849 1.27849,1.70464 -0.85232,0.85233 1.70465,2.13081 -3.4093,1.70465 -11.93254,-15.768 -1.70465,-0.42616 -1.70465,0.85232 -7.24475,5.54011 -3.4093,0.85232 -2.98313,0 -3.83546,-0.85232 -3.4093,-2.98314 -1.70464,1.27849 1.27848,2.13081 -9.80172,5.54011 -5.96627,-8.94941 8.52324,-5.96627 1.27848,1.27849 2.13082,-1.70464 -3.4093,-3.4093 -3.4093,0 z"
+                                 id="polyBaker"
+                                 inkscape:connector-curvature="0" />
+                              <text
+                                 xml:space="preserve"
+                                 style="font-size:17.04648209px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+                                 x="546.65668"
+                                 y="880.51404"
+                                 id="txtBaker"
+                                 sodipodi:linespacing="125%">
+                                 <tspan
+                                    sodipodi:role="line"
+                                    id="tspan3915"
+                                    x="546.65668"
+                                    y="880.51404"
+                                    style="font-size:9.37556553px">Baker</tspan>
+                              </text>
+                              <path
+                                 inkscape:connector-curvature="0"
+                                 id="linkBaker"
+                                 d="m 497.64811,898.839 -2.55698,-3.4093 1.70466,-1.70465 -1.27849,-1.27848 0.85232,-0.85233 -1.70465,-1.70464 3.4093,-1.70465 8.09708,-14.06335 14.48951,0.42616 3.4093,-5.96626 4.68778,0.42615 0,-1.70464 21.30811,0 3.83545,3.83546 7.24475,-5.11395 2.13081,2.55698 2.13082,-0.85233 3.83545,0 0,5.96626 8.94941,-4.68778 1.27849,1.27849 -2.13081,1.27849 2.55696,3.40929 -0.42615,1.27849 8.09708,10.22789 -2.13081,1.70465 1.27848,2.55697 -0.85233,1.27849 1.27849,1.70464 -0.85232,0.85233 1.70465,2.13081 -3.4093,1.70465 -11.93254,-15.768 -1.70465,-0.42616 -1.70465,0.85232 -7.24475,5.54011 -3.4093,0.85232 -2.98313,0 -3.83546,-0.85232 -3.4093,-2.98314 -1.70464,1.27849 1.27848,2.13081 -9.80172,5.54011 -5.96627,-8.94941 8.52324,-5.96627 1.27848,1.27849 2.13082,-1.70464 -3.4093,-3.4093 -3.4093,0 z"
+                                 style="fill:none;stroke:none" />
+                             </a>
+                           </g>
+                           <g
+                              inkscape:groupmode="layer"
+                              id="graphicsNext"
+                              inkscape:label="Next"
+                              transform="translate(0,-579)">
+                             <a href="#" id="bldgNext" class="bldgLink" onclick="clickLnk(diningHalls.indexOf('Next'));">
+                              <path
+                                 style="fill:#37c871;fill-opacity:1;stroke:#0e2216;stroke-width:0.89467365;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                                 d="m 114.79215,896.26361 3.13136,0.11184 -0.3355,-5.59171 0.78284,-0.3355 0,-1.78935 -0.78284,-0.11184 -0.22367,-1.56567 -3.9142,-0.44734 -0.55917,-2.12485 c 0,0 -0.49925,-0.75694 -0.89467,-0.78284 -0.40236,-0.0263 -1.00651,0.671 -1.00651,0.671 l 0,2.34852 -4.13787,0.22367 -6.03904,-16.43963 0,-3.13135 1.67751,0.22366 0.22367,-6.71005 -1.78935,-0.11183 0.22367,-6.26272 -2.23668,-0.22367 -0.22367,-1.78934 -5.927215,0 0,1.67751 -2.013015,0.11183 0,6.03905 -8.052063,0 -3.690529,-3.9142 -1.230176,-0.11183 -0.671005,0 -1.677513,0 -1.901182,1.45384 -2.348518,2.46036 -8.163897,0.22367 -0.223668,-6.26272 -10.176914,0.22367 -0.111834,5.81538 -4.026031,0.3355 -0.559171,1.45384 0.559171,1.34201 4.026031,0.67101 0.111834,3.35503 -7.828394,-0.11184 -0.223669,-1.90118 -5.815378,0.3355 -0.111834,1.78935 -8.4994,-0.22367 0.223669,-12.86093 -2.348519,0 -0.111834,-1.90118 -5.927212,0.11183 -0.111835,1.78935 -2.013015,-0.11184 0,11.07159 -2.013016,0.22367 -0.111834,4.2497 2.348518,0.11183 1.901182,4.36154 -0.111835,0.89467 -0.894673,0.22367 0.894673,2.12485 1.006508,0.44734 2.795855,7.60472 -0.671005,1.56568 0.894674,1.34201 0.894673,1.00651 0.78284,1.56568 0.223668,5.59171 2.348518,0.11183 0.111835,0.89467 2.572186,0.33551 0.223669,-1.11834 5.368041,0 0.447337,1.56567 5.479876,-0.11183 0,-1.45384 5.59171,-0.22367 0,0.78284 2.684021,0 0,-0.89468 2.795857,0 0,-6.03904 0.782839,-2.23669 1.006508,0.11184 0.447337,-1.00651 0.223668,-1.23018 -0.559171,-0.671 2.572187,-7.71656 1.453844,-0.33551 0.223669,-0.78284 0.111834,-0.89467 -0.671005,-0.89467 1.901181,-4.80887 2.907689,0 0,1.0065 2.12485,0 0.111834,-0.89467 5.927213,0 0,1.67751 5.703545,0 -0.111835,-1.56567 6.039047,-0.11184 0.111834,1.00651 2.236685,0.11183 0,-1.56568 2.795855,0.11184 1.677513,4.9207 -0.78284,-0.11183 0.894674,3.24319 1.34201,0.11184 2.460353,7.60472 -1.342011,0.3355 1.342011,2.68402 1.34201,0.33551 0.44734,1.78934 0.3355,5.70355 2.46035,0.22367 0.44734,1.11834 2.23668,0.11183 0,-1.0065 8.27573,-0.22367 0.33551,0.89467 2.68402,0 z"
+                                 id="polyNext"
+                                 inkscape:connector-curvature="0"
+                                 sodipodi:nodetypes="cccccccccaccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+                              <text
+                                 xml:space="preserve"
+                                 style="font-size:17.89347267px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+                                 x="30.692833"
+                                 y="882.73169"
+                                 id="txtNext"
+                                 sodipodi:linespacing="125%">
+                                 <tspan
+                                    sodipodi:role="line"
+                                    id="tspan5376"
+                                    x="30.692833"
+                                    y="882.73169"
+                                    style="font-size:9.84140968px">Next</tspan>
+                              </text>
+                              <path
+                                 sodipodi:nodetypes="cccccccccaccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+                                 inkscape:connector-curvature="0"
+                                 id="linkNext"
+                                 d="m 114.79215,896.26361 3.13136,0.11184 -0.3355,-5.59171 0.78284,-0.3355 0,-1.78935 -0.78284,-0.11184 -0.22367,-1.56567 -3.9142,-0.44734 -0.55917,-2.12485 c 0,0 -0.49925,-0.75694 -0.89467,-0.78284 -0.40236,-0.0263 -1.00651,0.671 -1.00651,0.671 l 0,2.34852 -4.13787,0.22367 -6.03904,-16.43963 0,-3.13135 1.67751,0.22366 0.22367,-6.71005 -1.78935,-0.11183 0.22367,-6.26272 -2.236684,-0.22367 -0.223668,-1.78934 -5.927213,0 0,1.67751 -2.013015,0.11183 0,6.03905 -8.052063,0 -3.690529,-3.9142 -1.230176,-0.11183 -0.671005,0 -1.677513,0 -1.901182,1.45384 -2.348518,2.46036 -8.163897,0.22367 -0.223668,-6.26272 -10.176914,0.22367 -0.111834,5.81538 -4.026031,0.3355 -0.559171,1.45384 0.559171,1.34201 4.026031,0.67101 0.111834,3.35503 -7.828394,-0.11184 -0.223669,-1.90118 -5.815378,0.3355 -0.111834,1.78935 -8.4994,-0.22367 0.223669,-12.86093 -2.348519,0 -0.111834,-1.90118 -5.927212,0.11183 -0.111835,1.78935 -2.013015,-0.11184 0,11.07159 -2.013016,0.22367 -0.111834,4.2497 2.348518,0.11183 1.901182,4.36154 -0.111835,0.89467 -0.894673,0.22367 0.894673,2.12485 1.006508,0.44734 2.795855,7.60472 -0.671005,1.56568 0.894674,1.34201 0.894673,1.00651 0.78284,1.56568 0.223668,5.59171 2.348518,0.11183 0.111835,0.89467 2.572186,0.33551 0.223669,-1.11834 5.368041,0 0.447337,1.56567 5.479876,-0.11183 0,-1.45384 5.59171,-0.22367 0,0.78284 2.684021,0 0,-0.89468 2.795857,0 0,-6.03904 0.782839,-2.23669 1.006508,0.11184 0.447337,-1.00651 0.223668,-1.23018 -0.559171,-0.671 2.572187,-7.71656 1.453844,-0.33551 0.223669,-0.78284 0.111834,-0.89467 -0.671005,-0.89467 1.901181,-4.80887 2.907689,0 0,1.0065 2.12485,0 0.111834,-0.89467 5.927213,0 0,1.67751 5.703545,0 -0.111835,-1.56567 6.039047,-0.11184 0.111834,1.00651 2.236685,0.11183 0,-1.56568 2.795855,0.11184 1.677513,4.9207 -0.78284,-0.11183 0.894674,3.24319 1.34201,0.11184 2.460353,7.60472 -1.342011,0.3355 1.342011,2.68402 1.34201,0.33551 0.447337,1.78934 0.335503,5.70355 2.46035,0.22367 0.44734,1.11834 2.23668,0.11183 0,-1.0065 8.27573,-0.22367 0.33551,0.89467 2.68402,0 z"
+                                 style="fill:none;stroke:none" />
+                             </a>
+                           </g>
+                           <g
+                              inkscape:groupmode="layer"
+                              id="graphicsMaseeh"
+                              inkscape:label="Maseeh"
+                              transform="translate(0,-579)">
+                             <a href="#" id="bldgMaseeh" class="bldgLink" onclick="clickLnk(diningHalls.indexOf('Maseeh'));">
+                              <path
+                                 style="fill:#ffcc00;stroke:#493a22;stroke-width:0.84851217;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                                 d="m 701.07198,896.34009 0.21213,-43.06198 5.93958,0.21212 0,-8.48512 1.27277,0.42426 0,-6.7881 17.18237,0.21212 0.42426,2.54554 3.60618,-0.21213 -0.21213,5.51534 13.57619,-0.63639 0,-7.21236 18.03088,0.21214 0.21213,6.36384 -2.75767,0.21213 0.21214,7.63661 -1.06064,0.21212 0,4.45469 1.27276,0.63639 0,8.69725 -1.27276,0.21212 0.21212,5.51533 0.84852,0 0,4.24256 -1.06064,0 0.21212,3.39405 0.63638,0 0.21214,4.66682 -1.06064,0.21212 0,7.00023 1.69702,0.42426 0,3.60618 -3.60618,-0.21214 -0.42425,-1.48489 -6.15172,0.21212 -1.90915,1.69703 -1.69703,-0.42426 -0.63638,-1.27277 0,-1.90915 1.4849,-0.63638 0.21213,-6.36385 -0.84852,0 0,-5.93957 0.84852,-0.42427 -0.21213,-2.3334 -0.63639,-1.06064 0,-3.8183 1.06064,-0.84852 -0.21212,-3.8183 -2.33341,-2.33341 -7.63661,-0.63638 0,2.12128 -0.84851,1.06063 -1.69703,0 -1.4849,-1.27276 -0.63638,-1.90915 -6.7881,0 -1.48489,2.12128 -1.27277,0.21213 0,8.06086 0.84851,0.84851 -0.42425,1.27277 0,4.66681 -0.21213,3.81831 -0.42426,-0.42426 0,7.42449 1.4849,1.06064 0.63639,1.69702 -0.63639,0.63638 -1.69702,0 -1.69703,-0.84851 -6.15171,-0.42426 -0.21213,1.48491 z"
+                                 id="polyMaseeh"
+                                 inkscape:connector-curvature="0" />
+                              <text
+                                 xml:space="preserve"
+                                 style="font-size:16.97024345px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+                                 x="716.98163"
+                                 y="858.15698"
+                                 id="txtMaseeh"
+                                 sodipodi:linespacing="125%">
+                                 <tspan
+                                    sodipodi:role="line"
+                                    id="tspan3848"
+                                    x="716.98163"
+                                    y="858.15698"
+                                    style="font-size:9.33363342px">Maseeh</tspan>
+                              </text>
+                              <path
+                                 style="fill:none;stroke:none"
+                                 d="m 700.64772,896.76435 0.21213,-43.06199 5.93959,0.21213 0,-8.48512 1.27277,0.42425 0,-6.78809 17.18236,0.21213 0.42426,2.54553 3.60618,-0.21212 -0.21213,5.51532 13.57619,-0.63639 0,-7.21234 18.03089,0.21212 0.21212,6.36384 -2.75766,0.21213 0.21213,7.63661 -1.06065,0.21213 0,4.45469 1.27277,0.63638 0,8.69725 -1.27277,0.21213 0.21214,5.51532 0.84851,0 0,4.24257 -1.06065,0 0.21214,3.39404 0.63638,0 0.21213,4.66682 -1.06065,0.21213 0,7.00023 1.69703,0.42425 0,3.60618 -3.60617,-0.21213 -0.42426,-1.48489 -6.15171,0.21212 -1.90916,1.69703 -1.69702,-0.42426 -0.63639,-1.27277 0,-1.90915 1.48491,-0.63638 0.21212,-6.36384 -0.84851,0 0,-5.93959 0.84851,-0.42425 -0.21212,-2.33341 -0.63639,-1.06065 0,-3.8183 1.06064,-0.84852 -0.21213,-3.8183 -2.33341,-2.3334 -7.63661,-0.63639 0,2.12128 -0.84851,1.06064 -1.69702,0 -1.4849,-1.27276 -0.63639,-1.90916 -6.78809,0 -1.4849,2.12128 -1.27276,0.21213 0,8.06086 0.84851,0.84852 -0.42426,1.27277 0,4.66682 -0.21213,3.8183 -0.42425,-0.42426 0,7.42448 1.48489,1.06064 0.63638,1.69702 -0.63638,0.63639 -1.69702,0 -1.69703,-0.84851 -6.15171,-0.42426 -0.21213,1.4849 z"
+                                 id="linkMaseeh"
+                                 inkscape:connector-curvature="0" />
+                             </a>
+                           </g>
+                           <g
+                              inkscape:groupmode="layer"
+                              id="graphicsSimmons"
+                              inkscape:label="simmons"
+                              transform="translate(0,-579)">
+                             <a href="#" id="bldgSimmons" class="bldgLink" onclick="clickLnk(diningHalls.indexOf('Simmons'));">
+                              <path
+                                 style="fill:#e05400;fill-opacity:1;stroke:#2d0000;stroke-width:1.05454385;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                                 d="m 133.39809,677.76872 2.98269,14.4874 99.28132,-17.4701 -2.1305,-14.06129 z"
+                                 id="polySimmons"
+                                 inkscape:connector-curvature="0" />
+                              <text
+                                 xml:space="preserve"
+                                 style="font-size:16.87270164px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+                                 x="47.010868"
+                                 y="700.6488"
+                                 id="txtSimmons"
+                                 sodipodi:linespacing="125%"
+                                 transform="matrix(0.98480775,-0.17364818,0.17364818,0.98480775,0,0)">
+                                 <tspan
+                                    sodipodi:role="line"
+                                    id="tspan3831"
+                                    x="47.010868"
+                                    y="700.6488"
+                                    style="font-size:9.27998543px;line-height:125%">Simmons</tspan>
+                              </text>
+                              <path
+                                 inkscape:connector-curvature="0"
+                                 id="linkSimmons"
+                                 d="m 133.39809,677.76872 2.98269,14.4874 99.28132,-17.4701 -2.1305,-14.06129 z"
+                                 style="fill:none;stroke:none;filter:url(#filter3833)" />
+                             </a>
+                           </g>
+                           <g
+                              inkscape:groupmode="layer"
+                              id="graphicsMcCormick"
+                              inkscape:label="McCormick"
+                              transform="translate(0,-579)">
+                             <a href="#" id="bldgMcCormick" class="bldgLink" onclick="clickLnk(diningHalls.indexOf('McCormick'));">
+                              <path
+                                 style="fill:#212178;stroke:#101016;stroke-width:0.90909094;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                                 d="m 619.86732,896.50274 0,-36.36364 4.09091,0.45455 0,-1.81819 59.54546,0 0,1.81819 7.27273,0 0,16.36363 -3.63637,-0.45454 0,20 z"
+                                 id="polyMcCormick"
+                                 inkscape:connector-curvature="0" />
+                              <text
+                                 xml:space="preserve"
+                                 style="font-size:18.18181801px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+                                 x="630.77643"
+                                 y="879.00275"
+                                 id="txtMcCormick"
+                                 sodipodi:linespacing="125%">
+                                 <tspan
+                                    sodipodi:role="line"
+                                    id="tspan3906"
+                                    x="630.77643"
+                                    y="879.00275"
+                                    style="font-size:10px;fill:#b7bec8">McCormick</tspan>
+                              </text>
+                              <path
+                                 inkscape:connector-curvature="0"
+                                 id="linkMcCormick"
+                                 d="m 619.86732,896.50274 0,-36.36364 4.09091,0.45455 0,-1.81819 59.54546,0 0,1.81819 7.27273,0 0,16.36363 -3.63637,-0.45454 0,20 z"
+                                 style="fill:none;stroke:none" />
+                             </a>
+                           </g>
+                        </svg>
+                     </div>
+                  </div>
+                  <div id="resultsPane">
+                     <section>
+                        <h2 class="title">Currently Serving:</h2><br/>
+			<div id="results"><p class="desc">Loading Data...</p></div>
+                     </section>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="footer">
+         <p id="pAbout">Created by Ken Leidal (kkleidal AT gmail DOT com) with contributions from John Parsons.  UI was derived from Creative Commons template found at http://html5templates.com/ex-machina.</p>
+      </div>
+   </body>
 </html>
+
+
