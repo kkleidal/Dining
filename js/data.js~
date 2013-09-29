@@ -245,7 +245,7 @@ function getMealTimeString(meal) {
 }
 function getMealOutput(meal) {
 	var outHtml = "";
-	outHtml += "<h3 class=\"resultsTitle\">" + meal.description + " (" + getMealTimeString(meal) + ")</h3>\n";
+	outHtml += "<h2 class=\"resultsTitle\">" + meal.description + " (" + getMealTimeString(meal) + ")</h2>\n";
 	outHtml += "<ul class=\"actual\">\n";
 	for (var f = 0; f < meal.foodItems.length; f++) {
 		var food = meal.foodItems[f];

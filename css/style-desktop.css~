@@ -23,7 +23,6 @@
 	overflow: hidden;
 	height: 5.2em;
 	width: 1200px;
-	margin: 0 auto;
 }
 
 /* Logo */
