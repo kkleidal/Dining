@@ -28,6 +28,7 @@
          	guiCtrlInit();
          });
       </script>
+	<?php include_once("analyticstracking.php") ?>
       <!--[if IE 9]>
       <link rel="stylesheet" href="css/style-ie9.css" />
       <![endif]-->
