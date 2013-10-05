@@ -339,10 +339,22 @@ ul.style6 .first {
 	height:450px;
 	border-radius:10px;
 }
-#divMap {
-	/* margin-left:196px; */
+#leftCol {
 	position:relative;
 	float:left;
+	padding:0px;
+}
+#linkCell {
+	height:40px;
+	vertical-align:bottom;
+}
+a#lnkBookmark {
+	/* text-decoration:underline; */
+}
+#divMap {
+	/* margin-left:196px; */
+	/*position:relative;
+	float:left;*/
 	background-image:url('containerBack.png');
 	background-color:rgba(256,256,256,1.0);
 	padding:0px 0px 0px 0px;
@@ -368,7 +380,7 @@ ul.style6 .first {
 	float: right;
 	background:rgba(256,256,256,0.50);
 	border-radius:10px;
-	width:250px;
+	width:300px;
 	height:100%;
 	overflow:scroll;
 	padding:10px 10px 10px 10px;

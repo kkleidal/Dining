@@ -22,6 +22,7 @@
       <!--<script src="css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>-->
       <script src="js/gui_ctrl.js"></script>
       <script src="js/data.js"></script>
+	<script src="js/cookies.js"></script>
       <script type="text/javascript">
          $(document).ready(function(){
          	guiCtrlInit();
@@ -59,6 +60,9 @@
          <div class="row">
             <div id="banner" class="12u">
                <div class="container" id="mapWrapper">
+		<div id="leftCol">
+		<table>
+		<tr><td>
                   <div id="divMap">
                      <div id="mapBgShade" class="shade">
                         <svg
@@ -290,6 +294,11 @@
                         </svg>
                      </div>
                   </div>
+		</td></tr>
+		<tr><td id="linkCell">
+		<a href="#" id="lnkBookmark" onclick="lnkDefault();">Set as Default Dining Hall</a>
+		</td></tr></table>
+		</div>
                   <div id="resultsPane">
                      <section>
                         <h2 class="resultsTitle">Currently Serving:</h2><br/>

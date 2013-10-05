@@ -34,9 +34,6 @@ clickLnk = function(hallId) {
 	if (hallsLoaded != null && hallsLoaded[hallId]) printHallData(hallId);
 	else $("#results").html("<p class=\"desc\">Loading Data...</p>");
 };
-lnkDefault = function() {
-	setDefaultHall(selectedHall);
-}
 /*hallColor = function(hallId, isGray) {
 	var strGoalColor = grayFill;
 	if (!isGray) strGoalColor = originalFills[hallId];
